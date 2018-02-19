@@ -1,6 +1,7 @@
 Name:           kimagemapeditor
 Version:        17.12.2
 Release:        1
+Epoch:		1
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
 Group:          Graphical desktop/KDE
