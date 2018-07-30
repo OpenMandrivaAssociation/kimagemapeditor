@@ -1,12 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Name:           kimagemapeditor
-Version:        17.12.2
+Version:        18.07.80
 Release:        1
-Epoch:		1
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
 Group:          Graphical desktop/KDE
 Url:            https://www.kde.org/applications/development/kimagemapeditor/
-Source0:        http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:        http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(openssl)
 
@@ -109,7 +110,7 @@ modify HTML imagemaps.
 Summary:        Kimagemapeditor handbook
 Group:          Documentation
 BuildArch:      noarch
-Requires:       %{name} >= %{epoch}:%{version}-%{release}
+Requires:       %{name} >= %{version}-%{release}
 
 Conflicts:      kde-l10n-handbooks-ar < 17.12.0-1
 Conflicts:      kde-l10n-handbooks-ast < 17.12.0-1
