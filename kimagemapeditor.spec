@@ -88,6 +88,8 @@ Conflicts:      kde-l10n-zh_CN < 17.12.0-1
 Conflicts:      kde-l10n-zh_TW < 17.12.0-1
 
 Recommends:     %{name}-handbook
+Obsoletes:     kdewebdev < 2:16.08.3-3
+Provides:     kdewebdev = 2:16.08.3-2
 
 %description
 KImageMapEditor is an HTML imagemap editor for KDE. It allows you to create and
