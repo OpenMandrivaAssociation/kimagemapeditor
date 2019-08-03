@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name:           kimagemapeditor
-Version:	19.07.80
+Version:	19.07.90
 Release:	1
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
@@ -96,15 +96,15 @@ KImageMapEditor is an HTML imagemap editor for KDE. It allows you to create and
 modify HTML imagemaps.
 
 %files -f %name.lang
-%_sysconfdir/xdg/kimagemapeditor.categories
-%_kde5_bindir/kimagemapeditor
+%_datadir/qlogging-categories5/kimagemapeditor.categories
+%_bindir/kimagemapeditor
 %_qt5_plugindir/kimagemapeditor.so
-%_kde5_datadir/metainfo/org.kde.kimagemapeditor.appdata.xml
-%_kde5_datadir/applications/org.kde.kimagemapeditor.desktop
+%_datadir/metainfo/org.kde.kimagemapeditor.appdata.xml
+%_datadir/applications/org.kde.kimagemapeditor.desktop
 %_kde5_iconsdir/*/*/*/*
-%_kde5_datadir/kimagemapeditor/
-%_kde5_datadir/kservices5/kimagemapeditorpart.desktop
-%_kde5_datadir/kxmlgui5/kimagemapeditor
+%_datadir/kimagemapeditor/
+%_datadir/kservices5/kimagemapeditorpart.desktop
+%_datadir/kxmlgui5/kimagemapeditor
 
 #------------------------------------------------------------------------------
 
@@ -188,5 +188,3 @@ This package provides kimagemapeditor handbook.
 %install
 %ninja_install -C build
 %find_lang %name --all-name
-
-
