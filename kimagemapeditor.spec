@@ -16,6 +16,7 @@ BuildRequires:  cmake(ECM)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Widgets)
+BuildRequires: cmake(Qt5WebEngineWidgets)
 
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5ConfigWidgets)
