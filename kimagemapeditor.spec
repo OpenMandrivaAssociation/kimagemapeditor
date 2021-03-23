@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name:           kimagemapeditor
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
@@ -99,7 +99,7 @@ modify HTML imagemaps.
 %files -f %name.lang
 %_datadir/qlogging-categories5/kimagemapeditor.categories
 %_bindir/kimagemapeditor
-%_qt5_plugindir/kimagemapeditor.so
+%{_libdir}/qt5/plugins/kf5/parts/kimagemapeditorpart.so
 %_datadir/metainfo/org.kde.kimagemapeditor.appdata.xml
 %_datadir/applications/org.kde.kimagemapeditor.desktop
 %_kde5_iconsdir/*/*/*/*
