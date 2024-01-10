@@ -2,7 +2,7 @@
 
 Name:           kimagemapeditor
 Version:	23.08.4
-Release:	2
+Release:	3
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
 Group:          Graphical desktop/KDE
