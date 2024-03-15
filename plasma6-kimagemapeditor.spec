@@ -5,7 +5,7 @@
 
 Name:           plasma6-kimagemapeditor
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
 Group:          Graphical desktop/KDE
