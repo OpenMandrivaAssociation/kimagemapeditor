@@ -23,6 +23,7 @@ BuildRequires:  cmake(ECM)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Gui)
 BuildRequires: cmake(Qt6Widgets)
+BuildRequires: cmake(Qt6WebEngineCore)
 BuildRequires: cmake(Qt6WebEngineWidgets)
 
 BuildRequires: cmake(KF6Config)
