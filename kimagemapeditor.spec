@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name:           kimagemapeditor
-Version:	25.12.0
+Version:	25.12.1
 Release:	%{?git:0.%{git}.}1
 Summary:        HTML imagemap editor for KDE
 License:        GPLv2+
